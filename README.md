@@ -1,16 +1,40 @@
-# React + Vite
+# RevBoost
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI-powered restaurant review platform that helps customers quickly generate and submit Google reviews through a QR-based mobile experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Features
 
-## React Compiler
+- QR-based review system
+- Mobile-first interface
+- Star rating system
+- Smart positive review tags
+- AI-generated restaurant reviews
+- Copy review to clipboard
+- Redirect to Google Maps review section
+- Easy and fast customer feedback flow
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# Problem Statement
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Many restaurant customers hesitate to type detailed reviews manually. Because of this, restaurants struggle to collect quality Google reviews.
+
+RevBoost solves this problem by simplifying the review process using AI-assisted review generation.
+
+---
+
+# Workflow
+
+1. Customer scans the restaurant QR code.
+2. Mobile web app opens in browser.
+3. User gives a star rating.
+4. Smart positive tags are suggested.
+5. User clicks on Generate Review.
+6. AI generates a human-like review.
+7. User previews the generated review.
+8. User clicks Submit Review.
+9. Review is copied to clipboard.
+10. Google Maps review section opens.
+11. User pastes and submits the review.
