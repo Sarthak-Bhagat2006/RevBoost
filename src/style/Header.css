@@ -6,11 +6,11 @@
 }
 
 .restaurant-logo {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #ffffff30;
+  /* border-radius: 50%; */
+  /* border: 2px solid #ffffff30; */
   margin-bottom: 14px;
 }
 
@@ -18,9 +18,10 @@
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 8px;
+  color: gold;
 }
 
 .restaurant-subtitle {
-  font-size: 14px;
-  color: #b3b3b3;
+  font-size: 15px;
+  color: gold;
 }

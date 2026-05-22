@@ -1,0 +1,31 @@
+/* GenerateButton.css */
+
+.generate-btn {
+  width: 100%;
+
+  margin-top: 28px;
+
+  padding: 16px;
+
+  border: none;
+  border-radius: 14px;
+
+  background-color: #e32626;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.generate-btn:hover {
+  background-color: #c91f1f;
+}
+
+.generate-btn:active {
+  transform: scale(0.98);
+}
