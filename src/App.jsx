@@ -1,13 +1,17 @@
-import { useState } from "react";
-import ReviewPage from "./pages/ReviewPage.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import "./App.css";
+import ReviewPage from "./pages/ReviewPage";
+import RedirectedPage from "./pages/RedirectedPage";
 
 function App() {
   return (
-    <>
-      <ReviewPage />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ReviewPage />} />
+
+        <Route path="/review-preview" element={<RedirectedPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

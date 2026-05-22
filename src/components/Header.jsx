@@ -10,7 +10,7 @@ function Header({ restaurant }) {
         loading="lazy"
       />
 
-      <h1 className="restaurant-name">Vedas</h1>
+      <h1 className="restaurant-name"></h1>
 
       <p className="restaurant-subtitle">Tell us about your experience</p>
     </div>

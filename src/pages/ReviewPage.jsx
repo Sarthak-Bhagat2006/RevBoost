@@ -4,10 +4,14 @@ import StarRating from "../components/StarRating.jsx";
 import TagSelector from "../components/TagSelector.jsx";
 import GenerateButton from "../components/GenerateButton.jsx";
 import { generateReview } from "../utils/generateReview";
+import { useNavigate } from "react-router-dom";
 
-function App() {
+import "../style/ReviewPage.css";
+
+function ReviewPage() {
   const [rating, setRating] = useState(0);
   const [selectedTags, setSelectedTags] = useState([]);
+  const navigate = useNavigate();
 
   const tagsByRating = {
     1: ["Bad Service", "Poor Taste", "Dirty Tables", "Too Expensive"],
@@ -54,19 +58,17 @@ function App() {
 
         <GenerateButton
           onClick={async () => {
-            if (rating === 0) {
-              alert("Please select rating");
-              return;
-            }
+            const review = await generateReview(
+              rating,
 
-            if (selectedTags.length === 0) {
-              alert("Please select at least one tag");
-              return;
-            }
+              selectedTags
+            );
 
-            const review = await generateReview(rating, selectedTags);
-
-            console.log(review);
+            navigate("/review-preview", {
+              state: {
+                review,
+              },
+            });
           }}
         />
       </div>
@@ -74,4 +76,4 @@ function App() {
   );
 }
 
-export default App;
+export default ReviewPage;
