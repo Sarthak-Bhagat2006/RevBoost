@@ -18,7 +18,27 @@ export async function generateReview(
     Tags:
     ${selectedTags.join(", ")}
 
-    Keep it of one para short 6 lines for vegeterian indian, natural, and human, always positive in any situation.
+   Generate a short 6-line restaurant review in one paragraph.
+
+Restaurant Name: Hotel Vedas
+
+Location: Pune-Nashik Highway, Sangamner
+
+The restaurant serves vegetarian Indian food.
+
+The review should:
+
+- sound natural and human
+
+- always be positive
+
+- mention taste, ambience, or service naturally
+
+- feel genuine, not robotic
+
+- be concise and mobile-friendly
+
+- avoid exaggeration
   `;
 
     const chatCompletion =
