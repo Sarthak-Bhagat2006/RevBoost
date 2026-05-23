@@ -18,28 +18,25 @@ export async function generateReview(
     Tags:
     ${selectedTags.join(", ")}
 
-   Generate a short 6-line restaurant review in one paragraph.
+   Write a very short Google review for Hotel Vedas at Sangamner.
 
-Restaurant Name: Hotel Vedas
+Rules:
 
-Location: Pune-Nashik Highway, Sangamner
+- Use simple English
 
-The restaurant serves vegetarian Indian food.
+- No fancy words
 
-The review should:
+- Sound like a normal customer
 
-- sound natural and human
+- Keep it positive
 
-- always be positive
+- Only 4 to 5 short sentences
 
-- mention taste, ambience, or service naturally
+- Mention food or service naturally
 
-- feel genuine, not robotic
+- Keep it human and casual
 
-- be concise and mobile-friendly
-
-- avoid exaggeration
-  `;
+`;;
 
     const chatCompletion =
         await groq.chat.completions.create({
